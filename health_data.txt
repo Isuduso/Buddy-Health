@@ -1,0 +1,650 @@
+[
+  {
+    "Disease/Condition Name": "Malaria",
+    "Explanation": "Malaria is a life-threatening disease caused by parasites transmitted through the bite of infected mosquitoes and is very common in Nigeria.",
+    "Symptoms": "Fever, chills, headache, body pain, fatigue, nausea, vomiting. Severe cases may also cause difficulty breathing, confusion, or seizures.",
+    "Causes": "Mosquito bites (Anopheles mosquitoes carrying Plasmodium parasites)",
+    "Advice / First Aid": "Sleep under insecticide-treated mosquito nets and avoid mosquito bites.",
+    "When to Seek Medical Care": "Seek medical care immediately if fever is persistent or severe.",
+    "Severity": "Mild to severe",
+    "Duration": "7–30 days (varies)"
+  },
+  {
+    "Disease/Condition Name": "Typhoid Fever",
+    "Explanation": "Typhoid fever is caused by bacteria spread through contaminated food and water.",
+    "Symptoms": "Prolonged high fever, stomach pain, weakness, loss of appetite, diarrhea or constipation.",
+    "Causes": "Bacteria (Salmonella Typhi) in contaminated food or water",
+    "Advice / First Aid": "Drink clean water, maintain proper hand hygiene, and practice safe food preparation.",
+    "When to Seek Medical Care": "Visit a health facility for proper testing and treatment if symptoms appear.",
+    "Severity": "Mild to severe",
+    "Duration": "1–3 weeks without treatment"
+  },
+  {
+    "Disease/Condition Name": "Diarrhea",
+    "Explanation": "Diarrhea is the frequent passing of loose or watery stool, often caused by contaminated food or water, infections, or poor hygiene.",
+    "Symptoms": "Frequent passing of loose or watery stool.",
+    "Causes": "Contaminated food or water, infections (bacterial, viral, parasitic), poor hygiene",
+    "Advice / First Aid": "Drink plenty of fluids or oral rehydration solution to prevent dehydration.",
+    "When to Seek Medical Care": "Seek medical care if diarrhea lasts more than two days, contains blood, or causes severe weakness or dehydration.",
+    "Severity": "Mild to moderate",
+    "Duration": "1–7 days"
+  },
+  {
+    "Disease/Condition Name": "Headache",
+    "Explanation": "Most headaches are caused by stress, dehydration, lack of sleep, or eye strain.",
+    "Symptoms": "Pain or pressure in the head, sensitivity to light or sound, sometimes nausea.",
+    "Causes": "Stress, dehydration, lack of sleep, eye strain, tension, migraine",
+    "Advice / First Aid": "Rest, drink water, and avoid bright screens or loud noise.",
+    "When to Seek Medical Care": "Seek medical attention if the headache is severe, sudden, persistent, or accompanied by vomiting, fever, or confusion.",
+    "Severity": "Mild to severe",
+    "Duration": "Few hours to a couple of days"
+  },
+  {
+    "Disease/Condition Name": "Fever",
+    "Explanation": "Fever is a temporary rise in body temperature and is often a sign of infection such as malaria, typhoid, or viral illness.",
+    "Symptoms": "Raised body temperature, chills, sweating, fatigue.",
+    "Causes": "Infections (bacterial, viral, parasitic), inflammation",
+    "Advice / First Aid": "Rest, drink fluids, and monitor your temperature.",
+    "When to Seek Medical Care": "Seek medical care if fever lasts more than two days, becomes very high, or is accompanied by severe symptoms.",
+    "Severity": "Mild to severe",
+    "Duration": "1–7 days depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Common Cold",
+    "Explanation": "The common cold is a mild viral infection of the nose and throat.",
+    "Symptoms": "Sneezing, runny nose, sore throat, cough, mild fever.",
+    "Causes": "Viral infections, mostly rhinoviruses",
+    "Advice / First Aid": "Rest, drink warm fluids, and maintain good hygiene.",
+    "When to Seek Medical Care": "See a doctor if symptoms worsen or breathing becomes difficult.",
+    "Severity": "Mild",
+    "Duration": "3–10 days"
+  }
+]
+
+[
+  {
+    "Disease/Condition Name": "Dehydration",
+    "Explanation": "Dehydration occurs when the body loses more fluid than it takes in.",
+    "Symptoms": "Dry mouth, weakness, dizziness, dark urine, fatigue.",
+    "Causes": "Insufficient fluid intake, excessive sweating, diarrhea, vomiting",
+    "Advice / First Aid": "Drink clean water or oral rehydration solution.",
+    "When to Seek Medical Care": "Seek medical help if there is confusion, inability to drink, or severe weakness.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on fluid replacement"
+  },
+  {
+    "Disease/Condition Name": "Minor Burns (First Aid)",
+    "Explanation": "Minor burns damage the top layer of the skin and can be treated at home.",
+    "Symptoms": "Redness, pain, swelling, sometimes blistering.",
+    "Causes": "Heat, hot liquids, fire, friction",
+    "Advice / First Aid": "Cool the burn immediately with clean running water for at least 10 minutes. Do not apply oil or harmful substances. Cover with a clean cloth or sterile dressing.",
+    "When to Seek Medical Care": "Seek care if the burn is large, deep, or affects the face, hands, or genitals.",
+    "Severity": "Mild",
+    "Duration": "Several days to 2 weeks"
+  },
+  {
+    "Disease/Condition Name": "Cuts and Wounds (First Aid)",
+    "Explanation": "Cuts and wounds occur when the skin is broken by sharp objects or trauma.",
+    "Symptoms": "Bleeding, pain, possible swelling or redness around the wound.",
+    "Causes": "Injury, accidents, sharp objects",
+    "Advice / First Aid": "Wash hands, clean the wound with mild soap and water, apply pressure to stop bleeding, cover with a clean bandage.",
+    "When to Seek Medical Care": "Seek care if bleeding does not stop or the wound is deep.",
+    "Severity": "Mild to moderate",
+    "Duration": "1–14 days depending on severity"
+  },
+  {
+    "Disease/Condition Name": "Cough",
+    "Explanation": "Cough is the body’s way of clearing the airways.",
+    "Symptoms": "Dry or productive cough, throat irritation, sometimes fever.",
+    "Causes": "Cold, flu, allergies, respiratory infections",
+    "Advice / First Aid": "Drink warm fluids and rest.",
+    "When to Seek Medical Care": "Seek care if cough lasts more than two weeks, produces blood, or causes difficulty breathing.",
+    "Severity": "Mild to moderate",
+    "Duration": "A few days to 3 weeks"
+  },
+  {
+    "Disease/Condition Name": "Sore Throat",
+    "Explanation": "A sore throat may be caused by viral or bacterial infection.",
+    "Symptoms": "Pain or irritation in the throat, difficulty swallowing.",
+    "Causes": "Viral or bacterial infections, allergies",
+    "Advice / First Aid": "Drink warm fluids and rest your voice.",
+    "When to Seek Medical Care": "Seek care if symptoms are severe or last more than a few days.",
+    "Severity": "Mild to moderate",
+    "Duration": "2–7 days"
+  },
+  {
+    "Disease/Condition Name": "Stomach Ulcer",
+    "Explanation": "Stomach ulcers are sores in the lining of the stomach.",
+    "Symptoms": "Burning stomach pain, bloating, nausea.",
+    "Causes": "H. pylori bacterial infection, excessive use of painkillers, stress",
+    "Advice / First Aid": "Avoid excessive painkillers and alcohol, eat small frequent meals.",
+    "When to Seek Medical Care": "Visit a health facility for proper diagnosis and treatment.",
+    "Severity": "Mild to severe",
+    "Duration": "Weeks to months without treatment"
+  },
+  {
+    "Disease/Condition Name": "Food Poisoning",
+    "Explanation": "Food poisoning occurs after eating contaminated food.",
+    "Symptoms": "Vomiting, diarrhea, stomach cramps, fever.",
+    "Causes": "Bacteria, viruses, or toxins in contaminated food",
+    "Advice / First Aid": "Drink fluids to prevent dehydration, rest.",
+    "When to Seek Medical Care": "Seek medical help if symptoms are severe or persistent.",
+    "Severity": "Mild to severe",
+    "Duration": "1–7 days depending on cause"
+  },
+  {
+    "Disease/Condition Name": "High Blood Pressure (Hypertension)",
+    "Explanation": "High blood pressure often has no symptoms but increases the risk of heart disease and stroke.",
+    "Symptoms": "Often asymptomatic, sometimes headaches, dizziness, blurred vision.",
+    "Causes": "Genetics, obesity, poor diet, lack of exercise, stress",
+    "Advice / First Aid": "Maintain a healthy diet, exercise regularly, reduce salt intake.",
+    "When to Seek Medical Care": "Regular medical checkups are important for monitoring.",
+    "Severity": "Mild to severe",
+    "Duration": "Chronic condition"
+  },
+  {
+    "Disease/Condition Name": "Diabetes",
+    "Explanation": "Diabetes is a condition where blood sugar levels are too high.",
+    "Symptoms": "Frequent urination, excessive thirst, fatigue, weight loss.",
+    "Causes": "Genetic factors, lifestyle, obesity, insulin resistance",
+    "Advice / First Aid": "Proper medical care, healthy diet, and regular monitoring.",
+    "When to Seek Medical Care": "See a doctor for diagnosis, treatment, and ongoing monitoring.",
+    "Severity": "Mild to severe",
+    "Duration": "Chronic condition"
+  }
+]
+
+[
+  {
+    "Disease/Condition Name": "Asthma",
+    "Explanation": "Asthma is a condition that affects breathing due to airway narrowing.",
+    "Symptoms": "Wheezing, coughing, chest tightness, shortness of breath.",
+    "Causes": "Airway inflammation triggered by allergens, exercise, cold air, or respiratory infections",
+    "Advice / First Aid": "Seek medical care for proper management and inhaler use.",
+    "When to Seek Medical Care": "Seek urgent care if experiencing severe shortness of breath, wheezing, or chest tightness.",
+    "Severity": "Mild to severe",
+    "Duration": "Chronic condition"
+  },
+  {
+    "Disease/Condition Name": "Menstrual Pain",
+    "Explanation": "Menstrual cramps cause lower abdominal pain during periods.",
+    "Symptoms": "Lower abdominal pain, sometimes back pain, bloating, irritability.",
+    "Causes": "Uterine contractions during menstruation",
+    "Advice / First Aid": "Rest, use a warm compress, take mild pain relief if needed.",
+    "When to Seek Medical Care": "Seek care if pain is severe, unusually heavy, or accompanied by other symptoms.",
+    "Severity": "Mild to moderate",
+    "Duration": "1–3 days per cycle"
+  },
+  {
+    "Disease/Condition Name": "Urinary Tract Infection (UTI)",
+    "Explanation": "UTI is an infection in the urinary system.",
+    "Symptoms": "Burning during urination, frequent urination, lower abdominal pain.",
+    "Causes": "Bacterial infection in the urinary tract, often E. coli",
+    "Advice / First Aid": "Drink plenty of water and maintain hygiene.",
+    "When to Seek Medical Care": "Seek medical treatment for proper diagnosis and antibiotics.",
+    "Severity": "Mild to moderate",
+    "Duration": "3–7 days with treatment"
+  },
+  {
+    "Disease/Condition Name": "Back Pain",
+    "Explanation": "Back pain may result from poor posture, heavy lifting, or muscle strain.",
+    "Symptoms": "Pain in the back, stiffness, limited mobility.",
+    "Causes": "Muscle strain, poor posture, herniated discs, injuries",
+    "Advice / First Aid": "Rest, gentle stretching, maintain good posture.",
+    "When to Seek Medical Care": "Seek care if pain is severe, persistent, or associated with numbness or weakness.",
+    "Severity": "Mild to severe",
+    "Duration": "Few days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Anxiety and Stress",
+    "Explanation": "Stress and anxiety can cause headaches, fatigue, poor sleep, and body tension.",
+    "Symptoms": "Restlessness, irritability, fatigue, difficulty sleeping, muscle tension.",
+    "Causes": "Emotional stress, pressure at work or school, life events",
+    "Advice / First Aid": "Relaxation techniques, rest, exercise, talk to someone supportive.",
+    "When to Seek Medical Care": "Seek professional help if symptoms interfere with daily life.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies; may be chronic"
+  },
+  {
+    "Disease/Condition Name": "Heat Exhaustion",
+    "Explanation": "Heat exhaustion occurs after exposure to high temperatures.",
+    "Symptoms": "Heavy sweating, weakness, dizziness, headache, nausea.",
+    "Causes": "Prolonged heat exposure, dehydration, overexertion",
+    "Advice / First Aid": "Move to a cool place, drink fluids, rest.",
+    "When to Seek Medical Care": "Seek medical care if symptoms worsen or do not improve.",
+    "Severity": "Moderate to severe",
+    "Duration": "Hours to a day"
+  },
+  {
+    "Disease/Condition Name": "Skin Rash",
+    "Explanation": "Skin rashes may be caused by allergies, infections, or irritation.",
+    "Symptoms": "Redness, itching, bumps or blisters, sometimes pain.",
+    "Causes": "Allergic reactions, infections, irritants",
+    "Advice / First Aid": "Keep the area clean, avoid scratching.",
+    "When to Seek Medical Care": "Seek care if the rash spreads, becomes painful, or is accompanied by fever.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Flu (Influenza)",
+    "Explanation": "Flu is a viral infection that affects the respiratory system.",
+    "Symptoms": "Fever, body aches, headache, cough, sore throat, fatigue.",
+    "Causes": "Influenza viruses",
+    "Advice / First Aid": "Rest, drink fluids, stay warm.",
+    "When to Seek Medical Care": "Seek care if breathing becomes difficult or symptoms are severe.",
+    "Severity": "Mild to severe",
+    "Duration": "5–10 days"
+  },
+  {
+    "Disease/Condition Name": "Pneumonia",
+    "Explanation": "Pneumonia is an infection of the lungs.",
+    "Symptoms": "Cough, fever, chest pain, fast breathing, difficulty breathing.",
+    "Causes": "Bacteria, viruses, or fungi infecting the lungs",
+    "Advice / First Aid": "Rest, stay hydrated, follow medical treatment.",
+    "When to Seek Medical Care": "Seek medical care immediately if breathing is difficult or symptoms worsen.",
+    "Severity": "Moderate to severe",
+    "Duration": "1–3 weeks with treatment"
+  },
+  {
+    "Disease/Condition Name": "Tuberculosis (TB)",
+    "Explanation": "Tuberculosis is a serious lung infection that spreads through the air.",
+    "Symptoms": "Persistent cough lasting more than two weeks, weight loss, night sweats, fever.",
+    "Causes": "Bacteria (Mycobacterium tuberculosis) transmitted via air droplets",
+    "Advice / First Aid": "Follow prescribed medications, rest, maintain nutrition.",
+    "When to Seek Medical Care": "Visit a health facility for testing and treatment.",
+    "Severity": "Severe",
+    "Duration": "6–12 months of treatment"
+  },
+  {
+    "Disease/Condition Name": "Hepatitis B",
+    "Explanation": "Hepatitis B is a viral infection that affects the liver.",
+    "Symptoms": "Fatigue, abdominal pain, dark urine, yellowing of eyes or skin.",
+    "Causes": "Hepatitis B virus transmitted via blood, sexual contact, or mother-to-child",
+    "Advice / First Aid": "Vaccination, safe medical practices, rest.",
+    "When to Seek Medical Care": "Seek medical evaluation if symptoms appear.",
+    "Severity": "Mild to severe",
+    "Duration": "Acute: few weeks; chronic: lifelong without treatment"
+  }
+]
+
+[
+  {
+    "Disease/Condition Name": "Yellow Fever",
+    "Explanation": "Yellow fever is a viral disease spread by mosquitoes.",
+    "Symptoms": "Fever, headache, muscle pain, nausea, weakness.",
+    "Causes": "Mosquito bites carrying the yellow fever virus",
+    "Advice / First Aid": "Vaccination is the best prevention.",
+    "When to Seek Medical Care": "Seek medical care if symptoms are severe.",
+    "Severity": "Mild to severe",
+    "Duration": "3–6 days"
+  },
+  {
+    "Disease/Condition Name": "Lassa Fever",
+    "Explanation": "Lassa fever is a viral illness common in some parts of Nigeria.",
+    "Symptoms": "Fever, weakness, headache, sore throat, vomiting, bleeding in severe cases.",
+    "Causes": "Contact with rodents or contaminated food, bodily fluids of infected persons",
+    "Advice / First Aid": "Avoid contact with rodents and contaminated food.",
+    "When to Seek Medical Care": "Seek medical care immediately if suspected.",
+    "Severity": "Severe",
+    "Duration": "1–4 weeks"
+  },
+  {
+    "Disease/Condition Name": "Cholera",
+    "Explanation": "Cholera is a severe diarrheal disease caused by contaminated water or food.",
+    "Symptoms": "Severe watery diarrhea, vomiting, rapid dehydration.",
+    "Causes": "Bacterial infection (Vibrio cholerae) from contaminated water or food",
+    "Advice / First Aid": "Drink oral rehydration solution immediately and rest.",
+    "When to Seek Medical Care": "Seek urgent medical care.",
+    "Severity": "Severe",
+    "Duration": "Few days with treatment"
+  },
+  {
+    "Disease/Condition Name": "Ear Infection",
+    "Explanation": "Ear infections may cause ear pain, reduced hearing, fever, or fluid discharge.",
+    "Symptoms": "Ear pain, hearing reduction, possible fever or fluid discharge.",
+    "Causes": "Bacterial or viral infections, water trapped in ear canal",
+    "Advice / First Aid": "Avoid inserting objects into the ear.",
+    "When to Seek Medical Care": "Seek care if pain is severe or symptoms persist.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to 2 weeks"
+  },
+  {
+    "Disease/Condition Name": "Eye Infection (Conjunctivitis)",
+    "Explanation": "Conjunctivitis causes redness, itching, tearing, or discharge from the eyes.",
+    "Symptoms": "Redness, itching, tearing, discharge.",
+    "Causes": "Bacterial, viral infection, or allergies",
+    "Advice / First Aid": "Maintain good hand hygiene and avoid touching the eyes.",
+    "When to Seek Medical Care": "Seek care if symptoms are severe or vision is affected.",
+    "Severity": "Mild to moderate",
+    "Duration": "5–14 days"
+  },
+  {
+    "Disease/Condition Name": "Toothache",
+    "Explanation": "Tooth pain may be caused by infection, decay, or gum disease.",
+    "Symptoms": "Pain in teeth or gums, sensitivity to hot/cold, swelling.",
+    "Causes": "Dental cavities, gum infection, trauma",
+    "Advice / First Aid": "Rinse the mouth with warm salt water and avoid very hot or cold foods.",
+    "When to Seek Medical Care": "Visit a dentist for proper treatment.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Gum Infection",
+    "Explanation": "Gum infections cause swollen, bleeding, or painful gums.",
+    "Symptoms": "Swelling, pain, redness, bleeding while brushing.",
+    "Causes": "Poor oral hygiene, bacterial infection, plaque buildup",
+    "Advice / First Aid": "Maintain good oral hygiene by brushing and flossing regularly.",
+    "When to Seek Medical Care": "Seek dental care if symptoms continue.",
+    "Severity": "Mild to moderate",
+    "Duration": "Several days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Vomiting",
+    "Explanation": "Vomiting may be caused by infection, food poisoning, or stomach irritation.",
+    "Symptoms": "Forceful expulsion of stomach contents, nausea.",
+    "Causes": "Gastroenteritis, food poisoning, medications, illness",
+    "Advice / First Aid": "Drink small amounts of clean fluids frequently to prevent dehydration.",
+    "When to Seek Medical Care": "Seek care if vomiting is severe, persistent, or contains blood.",
+    "Severity": "Mild to severe",
+    "Duration": "Few hours to several days"
+  },
+  {
+    "Disease/Condition Name": "Constipation",
+    "Explanation": "Constipation is difficulty passing stool.",
+    "Symptoms": "Infrequent, hard, or painful stools.",
+    "Causes": "Low fiber diet, dehydration, lack of exercise, certain medications",
+    "Advice / First Aid": "Drink plenty of water, eat fiber-rich foods, stay active.",
+    "When to Seek Medical Care": "Seek care if constipation lasts more than a week or causes severe pain.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to a week"
+  },
+  {
+    "Disease/Condition Name": "Hemorrhoids (Pile)",
+    "Explanation": "Hemorrhoids are swollen veins around the anus.",
+    "Symptoms": "Pain, itching, bleeding during bowel movements.",
+    "Causes": "Straining during bowel movements, constipation, pregnancy",
+    "Advice / First Aid": "Increase fiber intake, drink plenty of water, avoid straining.",
+    "When to Seek Medical Care": "Seek care if symptoms are severe.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Obesity",
+    "Explanation": "Obesity is excessive body weight that increases the risk of many diseases.",
+    "Symptoms": "Excess body fat, potential fatigue, risk of comorbidities.",
+    "Causes": "Poor diet, sedentary lifestyle, genetics",
+    "Advice / First Aid": "Maintain a healthy diet, exercise regularly, avoid excessive sugary and fatty foods.",
+    "When to Seek Medical Care": "Medical guidance may be needed for weight management.",
+    "Severity": "Chronic condition",
+    "Duration": "Ongoing"
+  },
+  {
+    "Disease/Condition Name": "Anemia",
+    "Explanation": "Anemia occurs when there are not enough healthy red blood cells.",
+    "Symptoms": "Fatigue, weakness, dizziness, pale skin.",
+    "Causes": "Iron deficiency, vitamin deficiency, chronic disease, blood loss",
+    "Advice / First Aid": "Eat iron-rich foods and maintain good nutrition.",
+    "When to Seek Medical Care": "Seek medical evaluation for proper treatment.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Pregnancy Warning Signs",
+    "Explanation": "Certain symptoms during pregnancy require urgent medical care.",
+    "Symptoms": "Severe abdominal pain, heavy bleeding, severe headache, blurred vision, reduced baby movement.",
+    "Causes": "Complications during pregnancy",
+    "Advice / First Aid": "Monitor symptoms carefully, maintain rest and hydration.",
+    "When to Seek Medical Care": "Seek medical care immediately if any of these symptoms occur.",
+    "Severity": "Severe",
+    "Duration": "Immediate attention required"
+  },
+  {
+    "Disease/Condition Name": "Breast Lump",
+    "Explanation": "A lump in the breast should always be checked by a healthcare professional.",
+    "Symptoms": "Presence of a palpable lump, possible pain or changes in breast skin.",
+    "Causes": "Benign cysts, fibroadenomas, or breast cancer",
+    "Advice / First Aid": "Monitor changes, maintain self-exams, seek evaluation.",
+    "When to Seek Medical Care": "Early medical evaluation helps detect serious conditions early.",
+    "Severity": "Potentially serious",
+    "Duration": "Immediate evaluation recommended"
+  }
+]
+[
+  {
+    "Disease/Condition Name": "Sexual Health – STIs",
+    "Explanation": "Sexually transmitted infections affect reproductive organs and overall health.",
+    "Symptoms": "Unusual discharge, sores, pain during urination, itching.",
+    "Causes": "Bacterial, viral, or parasitic infections transmitted via sexual contact",
+    "Advice / First Aid": "Practice safe sex, maintain hygiene, and monitor symptoms.",
+    "When to Seek Medical Care": "Seek medical testing and treatment if symptoms appear.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on infection"
+  },
+  {
+    "Disease/Condition Name": "Erectile Dysfunction",
+    "Explanation": "Difficulty maintaining an erection may be related to stress, medical conditions, or lifestyle factors.",
+    "Symptoms": "Inability to achieve or maintain an erection suitable for sexual activity.",
+    "Causes": "Stress, cardiovascular issues, diabetes, hormonal imbalance, lifestyle factors",
+    "Advice / First Aid": "Healthy lifestyle, manage stress, and monitor symptoms.",
+    "When to Seek Medical Care": "Medical evaluation can help identify the cause and treatment options.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Depression",
+    "Explanation": "Depression is a mental health condition affecting mood, thoughts, and behavior.",
+    "Symptoms": "Persistent sadness, loss of interest, fatigue, sleep problems, poor concentration.",
+    "Causes": "Genetics, stress, trauma, chemical imbalances in the brain",
+    "Advice / First Aid": "Engage in self-care, maintain routine, and talk to supportive people.",
+    "When to Seek Medical Care": "Seek professional help if symptoms last more than two weeks or affect daily life.",
+    "Severity": "Mild to severe",
+    "Duration": "Weeks to months; can be chronic"
+  },
+  {
+    "Disease/Condition Name": "Panic Attack",
+    "Explanation": "Panic attacks are sudden episodes of intense fear or discomfort.",
+    "Symptoms": "Fast heartbeat, sweating, shortness of breath, dizziness, trembling.",
+    "Causes": "Stress, anxiety disorders, traumatic events",
+    "Advice / First Aid": "Sit down, breathe slowly, stay calm, and monitor symptoms.",
+    "When to Seek Medical Care": "Seek evaluation if episodes are frequent or severe.",
+    "Severity": "Moderate to severe",
+    "Duration": "Typically 5–30 minutes per episode"
+  },
+  {
+    "Disease/Condition Name": "Poisoning",
+    "Explanation": "Poisoning occurs when toxic substances enter the body.",
+    "Symptoms": "Nausea, vomiting, abdominal pain, dizziness, confusion, or unconsciousness.",
+    "Causes": "Chemicals, drugs, contaminated food or water",
+    "Advice / First Aid": "Do not induce vomiting unless instructed by a professional.",
+    "When to Seek Medical Care": "Seek emergency medical care immediately.",
+    "Severity": "Severe",
+    "Duration": "Immediate attention required"
+  },
+  {
+    "Disease/Condition Name": "Snake Bite",
+    "Explanation": "Snake bites can inject venom that affects the body.",
+    "Symptoms": "Pain, swelling, redness, possible bleeding, nausea, dizziness.",
+    "Causes": "Bites from venomous snakes",
+    "Advice / First Aid": "Keep the person calm, immobilize the affected area, avoid cutting or sucking venom.",
+    "When to Seek Medical Care": "Seek emergency medical care immediately.",
+    "Severity": "Severe",
+    "Duration": "Immediate attention required"
+  },
+  {
+    "Disease/Condition Name": "Dog Bite",
+    "Explanation": "Dog bites can cause wounds and risk of infection.",
+    "Symptoms": "Pain, bleeding, swelling, possible puncture wounds.",
+    "Causes": "Dog attacks or bites",
+    "Advice / First Aid": "Wash the wound immediately with clean water and soap, cover with clean dressing.",
+    "When to Seek Medical Care": "Seek medical care to prevent infection and assess for rabies.",
+    "Severity": "Mild to severe",
+    "Duration": "Immediate care recommended"
+  },
+  {
+    "Disease/Condition Name": "Fracture (Broken Bone)",
+    "Explanation": "Fractures are breaks in bones due to trauma or injury.",
+    "Symptoms": "Severe pain, swelling, deformity, inability to move the limb.",
+    "Causes": "Accidents, falls, sports injuries, trauma",
+    "Advice / First Aid": "Immobilize the area, avoid movement, apply ice if necessary.",
+    "When to Seek Medical Care": "Seek urgent medical care immediately.",
+    "Severity": "Severe",
+    "Duration": "Weeks to months depending on bone and treatment"
+  },
+  {
+    "Disease/Condition Name": "Sprain",
+    "Explanation": "A sprain occurs when ligaments are stretched or torn.",
+    "Symptoms": "Pain, swelling, bruising, limited joint movement.",
+    "Causes": "Twisting or stretching joints excessively",
+    "Advice / First Aid": "Rest the joint, apply a cold compress, elevate the area.",
+    "When to Seek Medical Care": "Seek care if swelling or pain is severe.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Body Pain",
+    "Explanation": "General body pain may be caused by infection, stress, physical strain, or viral illness.",
+    "Symptoms": "Aches, soreness, fatigue.",
+    "Causes": "Viral infections, physical activity, stress, dehydration",
+    "Advice / First Aid": "Rest, drink fluids, avoid strenuous activity.",
+    "When to Seek Medical Care": "Seek care if pain is severe, persistent, or associated with fever or weakness.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Weakness and Fatigue",
+    "Explanation": "Feeling weak or tired may be caused by infection, anemia, stress, lack of sleep, or poor nutrition.",
+    "Symptoms": "Low energy, tiredness, difficulty performing daily activities.",
+    "Causes": "Illness, poor diet, stress, dehydration",
+    "Advice / First Aid": "Rest, eat balanced meals, stay hydrated.",
+    "When to Seek Medical Care": "Seek care if fatigue is severe, persistent, or affects daily activities.",
+    "Severity": "Mild to moderate",
+    "Duration": "Days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Loss of Appetite",
+    "Explanation": "Loss of appetite may occur during infections, stress, or digestive problems.",
+    "Symptoms": "Reduced desire to eat, weight loss.",
+    "Causes": "Illness, stress, gastrointestinal issues",
+    "Advice / First Aid": "Drink fluids, try small, frequent meals.",
+    "When to Seek Medical Care": "Seek care if it lasts more than a few days or is associated with weight loss.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Dizziness",
+    "Explanation": "Dizziness may be caused by dehydration, low blood pressure, anemia, or infection.",
+    "Symptoms": "Lightheadedness, unsteady balance, fainting risk.",
+    "Causes": "Dehydration, low blood pressure, anemia, infections",
+    "Advice / First Aid": "Sit or lie down immediately and drink fluids.",
+    "When to Seek Medical Care": "Seek care if dizziness is severe, persistent, or associated with fainting.",
+    "Severity": "Mild to severe",
+    "Duration": "Minutes to hours depending on cause"
+  }
+]
+
+[
+  {
+    "Disease/Condition Name": "Chest Pain",
+    "Explanation": "Chest pain can have various causes including muscle strain, anxiety, or heart/lung problems.",
+    "Symptoms": "Pain or discomfort in the chest, tightness, pressure, possible sweating, nausea, or shortness of breath.",
+    "Causes": "Muscle strain, anxiety, heart conditions (e.g., angina), lung issues (e.g., pneumonia, pulmonary embolism).",
+    "Advice / First Aid": "Rest, avoid exertion, monitor symptoms.",
+    "When to Seek Medical Care": "Seek immediate medical care if pain is severe, sudden, or associated with difficulty breathing, sweating, or nausea.",
+    "Severity": "Moderate to severe",
+    "Duration": "Varies depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Difficulty Breathing",
+    "Explanation": "Difficulty breathing occurs when the body cannot get enough oxygen efficiently.",
+    "Symptoms": "Shortness of breath, rapid breathing, wheezing, chest tightness, inability to speak in full sentences.",
+    "Causes": "Asthma, respiratory infections, allergic reactions, heart problems, other serious medical conditions.",
+    "Advice / First Aid": "Sit upright, remain calm, use prescribed inhalers if applicable.",
+    "When to Seek Medical Care": "Seek emergency medical care immediately if breathing is fast, painful, or worsening.",
+    "Severity": "Severe",
+    "Duration": "Immediate attention required"
+  },
+  {
+    "Disease/Condition Name": "Swelling of Legs or Body",
+    "Explanation": "Swelling occurs when fluid accumulates in tissues due to injury, infection, or medical conditions.",
+    "Symptoms": "Swelling in legs, arms, or other body parts, tightness, puffiness, possible pain.",
+    "Causes": "Injury, infections, heart failure, kidney disease, circulatory problems.",
+    "Advice / First Aid": "Rest, elevate affected area, monitor for changes.",
+    "When to Seek Medical Care": "Seek medical care if swelling is sudden, severe, or persistent.",
+    "Severity": "Mild to severe",
+    "Duration": "Varies depending on cause"
+  }
+]
+
+[
+  {
+    "Disease/Condition Name": "Fever and Feeling Hot",
+    "Explanation": "Feeling hot or having a fever is often a sign of infection such as malaria, typhoid, flu, or other illnesses.",
+    "Symptoms": "Elevated body temperature, feeling hot, sweating, fatigue.",
+    "Causes": "Infections (malaria, typhoid, flu), inflammatory conditions, other illnesses.",
+    "Advice / First Aid": "Rest, drink plenty of fluids, monitor temperature.",
+    "When to Seek Medical Care": "Seek care if fever lasts more than two days, becomes very high, or is associated with severe weakness, vomiting, or confusion.",
+    "Severity": "Mild to severe",
+    "Duration": "Few days to a week depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Weakness and Tiredness",
+    "Explanation": "General weakness or tiredness may be caused by infection, anemia, stress, dehydration, or lack of sleep.",
+    "Symptoms": "Low energy, fatigue, difficulty performing daily activities.",
+    "Causes": "Infections, anemia, stress, dehydration, lack of sleep.",
+    "Advice / First Aid": "Rest, eat balanced meals, drink enough fluids.",
+    "When to Seek Medical Care": "Seek care if weakness is severe, persistent, or affects daily activities.",
+    "Severity": "Mild to moderate",
+    "Duration": "Days to weeks depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Body Pain",
+    "Explanation": "Body pain may occur due to infection such as malaria or flu, physical strain, or stress.",
+    "Symptoms": "Aches, soreness, fatigue.",
+    "Causes": "Viral infections, physical activity, stress, dehydration.",
+    "Advice / First Aid": "Rest, drink fluids, avoid strenuous activity.",
+    "When to Seek Medical Care": "Seek care if pain is severe, persistent, or occurs with fever.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks depending on cause"
+  },
+  {
+    "Disease/Condition Name": "Feeling Cold and Shivering",
+    "Explanation": "Shivering or chills often occur with fever and infections such as malaria or flu.",
+    "Symptoms": "Shivering, feeling cold, possible fever.",
+    "Causes": "Infections, fever, cold exposure.",
+    "Advice / First Aid": "Keep warm and monitor temperature.",
+    "When to Seek Medical Care": "Seek care if symptoms are severe or persistent.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few hours to days"
+  },
+  {
+    "Disease/Condition Name": "Loss of Energy",
+    "Explanation": "Loss of energy may be caused by illness, poor nutrition, dehydration, or stress.",
+    "Symptoms": "Fatigue, lack of motivation, reduced activity levels.",
+    "Causes": "Illness, poor nutrition, dehydration, stress.",
+    "Advice / First Aid": "Ensure proper rest, nutrition, and hydration.",
+    "When to Seek Medical Care": "Seek care if the condition continues for several days.",
+    "Severity": "Mild to moderate",
+    "Duration": "Days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Loss of Appetite",
+    "Explanation": "Loss of appetite may occur during infections or digestive problems.",
+    "Symptoms": "Reduced desire to eat, possible weight loss.",
+    "Causes": "Illness, digestive issues, stress, infections.",
+    "Advice / First Aid": "Drink fluids and try small meals.",
+    "When to Seek Medical Care": "Seek care if it lasts more than a few days or leads to weight loss.",
+    "Severity": "Mild to moderate",
+    "Duration": "Few days to weeks"
+  },
+  {
+    "Disease/Condition Name": "Dizziness or Lightheadedness",
+    "Explanation": "Dizziness may be caused by dehydration, low blood pressure, anemia, or infection.",
+    "Symptoms": "Lightheadedness, unsteady balance, fainting risk.",
+    "Causes": "Dehydration, low blood pressure, anemia, infections.",
+    "Advice / First Aid": "Sit or lie down and drink fluids.",
+    "When to Seek Medical Care": "Seek care if dizziness is severe, persistent, or leads to fainting.",
+    "Severity": "Mild to severe",
+    "Duration": "Minutes to hours depending on cause"
+  }
+]
+
