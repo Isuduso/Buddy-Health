@@ -126,13 +126,13 @@ Question: {message}"""
     else:
         prompt = f"""Answer using this exact structure:
 
-BASED ON YOUR SYMPTOMS:
-[Brief explanation of the condition]
+THESE SYMPTOMS COULD BE RELATED TO:
+[GENERAL POSSIBLITIES ONLY - THIS IS NOT A DIAGNOSIS]
 
 COMMON SYMPTOMS:
 [List the symptoms]
 
-FIRST AID & HOME CARE:
+GENERAL WELLNESS TIPS:
 [Practical first aid steps]
 
 WHEN TO SEE A DOCTOR:
