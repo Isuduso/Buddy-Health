@@ -9,8 +9,8 @@ python-dotenv==1.0.0
 langchain
 langchain-community
 langchain-groq
-langchain-huggingface
 langchain-core
 langchain-text-splitters
 chromadb
 gunicorn
+langchain-classic
