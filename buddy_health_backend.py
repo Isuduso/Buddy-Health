@@ -10,7 +10,7 @@ from functools import wraps
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_classic.chains import RetrievalQA
 from langchain_groq import ChatGroq
@@ -35,7 +35,7 @@ print("Loading health data and AI model...")
 docs = load_health_data("health_data.txt")
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 chunks = splitter.split_documents(docs)
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embeddings = HuggingFaceInferenceAPIEmbeddings(api_key=os.environ.get("HF_API_KEY"), model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = Chroma.from_documents(chunks, embeddings)
 llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY, temperature=0.2)
 qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=vectorstore.as_retriever(search_kwargs={"k": 3}), return_source_documents=True)
