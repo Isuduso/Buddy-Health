@@ -16,6 +16,23 @@ from langchain_classic.chains import RetrievalQA
 from langchain_groq import ChatGroq
 
 import os
+
+HEALTH_KEYWORDS = [
+    "pain", "fever", "headache", "cough", "malaria", "typhoid", "diabetes",
+    "hypertension", "blood", "stomach", "chest", "throat", "skin", "wound",
+    "burn", "diarrhea", "vomit", "dizzy", "breathing", "heart", "infection",
+    "symptom", "sick", "ill", "doctor", "hospital", "medicine", "treatment",
+    "health", "body", "pregnant", "baby", "child", "eye", "ear", "nose",
+    "leg", "arm", "head", "back", "joint", "swollen", "rash", "cold", "flu",
+    "fatigue", "weak", "tired", "weight", "pressure", "sugar", "urinate",
+    "belly", "dey pain", "i get", "fever don", "head dey", "my body"
+]
+
+def is_health_related(message):
+    message_lower = message.lower().strip()
+    if len(message_lower) < 5:
+        return False
+    return any(keyword in message_lower for keyword in HEALTH_KEYWORDS)
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 def load_health_data(filepath):
