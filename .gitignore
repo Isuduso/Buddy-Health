@@ -1,0 +1,7 @@
+buddy_health.db
+__pycache__/
+*.pyc
+.env
+chroma_db/
+*.db
+groq_key.txt

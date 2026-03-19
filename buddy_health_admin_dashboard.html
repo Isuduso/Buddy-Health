@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Health - Admin Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 { font-size: 28px; margin-bottom: 10px; }
+        header p { opacity: 0.9; font-size: 14px; }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .controls input {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .controls button {
+            padding: 10px 25px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .controls button:hover { background: #5568d3; }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #999;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+        }
+
+        .tab-btn.active { color: #667eea; border-bottom-color: #667eea; }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-card h3 { color: #999; font-size: 12px; margin-bottom: 10px; text-transform: uppercase; }
+        .stat-card .number { font-size: 32px; font-weight: bold; color: #667eea; }
+
+        table {
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #eee;
+        }
+
+        td { padding: 12px 15px; border-bottom: 1px solid #eee; vertical-align: top; }
+        tr:hover { background: #f8f9fa; }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e8f4f8;
+            color: #667eea;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge.pidgin { background: #f0e8f8; color: #764ba2; }
+
+        .time { color: #999; font-size: 12px; }
+
+        .message-preview {
+            max-width: 300px;
+            color: #666;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .bot-response-preview {
+            max-width: 300px;
+            color: #444;
+            font-size: 12px;
+            line-height: 1.5;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .loading { text-align: center; padding: 40px; color: #999; }
+
+        .error-msg {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .success-msg {
+            background: #efe;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .empty { text-align: center; padding: 40px; color: #999; }
+
+        .convo-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+            border-left: 4px solid #667eea;
+        }
+
+        .convo-card .convo-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .convo-card .user-msg {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .convo-card .bot-msg {
+            background: linear-gradient(135deg, rgba(102,126,234,0.08), rgba(118,75,162,0.08));
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #444;
+            white-space: pre-wrap;
+            line-height: 1.6;
+            border-left: 3px solid #667eea;
+        }
+
+        .convo-card .msg-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 20px; }
+            .controls { flex-direction: column; }
+            table { font-size: 12px; }
+            th, td { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Buddy Health Admin Dashboard</h1>
+            <p>Monitor users, conversations, and health inquiries</p>
+        </header>
+
+        <div class="controls">
+            <input type="password" id="adminKey" placeholder="Enter Admin Key" value="buddy_secure_admin_2024!">
+            <button onclick="loadData()">Load Data</button>
+            <button onclick="loadData()" style="background: #764ba2;">Refresh</button>
+        </div>
+
+        <div id="message"></div>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('overview', event)">📊 Overview</button>
+            <button class="tab-btn" onclick="switchTab('users', event)">👥 Users</button>
+            
+        </div>
+
+        <!-- OVERVIEW TAB -->
+        <div id="overview" class="tab-content active">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <div class="number" id="totalUsers">—</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Conversations</h3>
+                    <div class="number" id="totalConversations">—</div>
+                </div>
+                <div class="stat-card">
+                    <h3>English Users</h3>
+                    <div class="number" id="englishUsers">—</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Pidgin Users</h3>
+                    <div class="number" id="pidginUsers">—</div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 15px;">Recent Conversations</h2>
+            <div id="recentConversations"><div class="empty">Click "Load Data" to see conversations</div></div>
+        </div>
+
+        <!-- USERS TAB -->
+        <div id="users" class="tab-content">
+            <h2 style="margin-bottom: 15px;">Registered Users</h2>
+            <div id="usersTable"><div class="empty">Click "Load Data" to see users</div></div>
+        </div>
+
+        <!-- CONVERSATIONS TAB -->
+        
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5001';
+        let usersData = [];
+        let conversationsData = [];
+
+        function showMessage(text, type = 'success') {
+            const msgDiv = document.getElementById('message');
+            msgDiv.innerHTML = `<div class="${type}-msg">${text}</div>`;
+            setTimeout(() => msgDiv.innerHTML = '', 3000);
+        }
+
+        function getAdminKey() {
+            return document.getElementById('adminKey').value;
+        }
+
+        async function loadData() {
+            const adminKey = getAdminKey();
+            if (!adminKey) { showMessage('Please enter admin key', 'error'); return; }
+
+            
+
+            try {
+                const usersRes = await fetch(`${API_URL}/admin/users`, {
+                    headers: { 'X-Admin-Key': adminKey }
+                });
+
+                if (usersRes.status === 401) {
+                    showMessage('❌ Invalid admin key', 'error');
+                    return;
+                }
+
+                usersData = await usersRes.json();
+
+                const convRes = await fetch(`${API_URL}/admin/conversations`, {
+                    headers: { 'X-Admin-Key': adminKey }
+                });
+                conversationsData = await convRes.json();
+
+                updateDashboard();
+                showMessage('✅ Data loaded successfully!');
+            } catch (err) {
+                
+            }
+        }
+
+        function updateDashboard() {
+            // Stats
+            document.getElementById('totalUsers').textContent = usersData.total_users || 0;
+            document.getElementById('totalConversations').textContent = conversationsData.total_conversations || 0;
+            const englishCount = usersData.users?.filter(u => u.language === 'en').length || 0;
+            const pidginCount = usersData.users?.filter(u => u.language === 'pidgin').length || 0;
+            document.getElementById('englishUsers').textContent = englishCount;
+            document.getElementById('pidginUsers').textContent = pidginCount;
+
+            updateUsersTable();
+            updateConversationsTable();
+            updateRecentConversations();
+        }
+
+        function updateUsersTable() {
+            const users = usersData.users || [];
+            if (users.length === 0) {
+                document.getElementById('usersTable').innerHTML = '<div class="empty">No users registered yet</div>';
+                return;
+            }
+
+            let html = `<table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Name</th>
+                        <th>Language</th>
+                        <th>Joined</th>
+                        <th>Conversations</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+
+            users.forEach(user => {
+                const date = new Date(user.created_at).toLocaleDateString();
+                const langBadge = `<span class="badge ${user.language === 'pidgin' ? 'pidgin' : ''}">${user.language === 'en' ? '🇬🇧 English' : '🇳🇬 Pidgin'}</span>`;
+                html += `<tr>
+                    <td>${user.id}</td>
+                    <td><strong>${user.username}</strong></td>
+                    <td>${user.name}</td>
+                    <td>${langBadge}</td>
+                    <td><span class="time">${date}</span></td>
+                    <td><strong>${user.total_conversations}</strong></td>
+                </tr>`;
+            });
+
+            html += '</tbody></table>';
+            document.getElementById('usersTable').innerHTML = html;
+        }
+
+        function updateConversationsTable() {
+            const convs = conversationsData.conversations || [];
+            if (convs.length === 0) {
+                document.getElementById('conversationsTable').innerHTML = '<div class="empty">No conversations yet</div>';
+                return;
+            }
+
+            let html = `<table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User Message</th>
+                        <th>Bot Response</th>
+                        <th>Language</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+
+            convs.slice(0, 50).forEach(conv => {
+                const date = new Date(conv.created_at).toLocaleString();
+                const langBadge = `<span class="badge ${conv.language === 'pidgin' ? 'pidgin' : ''}">${conv.language === 'en' ? '🇬🇧 English' : '🇳🇬 Pidgin'}</span>`;
+                const userMsg = conv.user_message || '';
+                const botMsg = conv.bot_response || '';
+
+                html += `<tr>
+                    <td>${conv.id}</td>
+                    <td><div class="message-preview">${userMsg.substring(0, 80)}${userMsg.length > 80 ? '...' : ''}</div></td>
+                    <td><div class="bot-response-preview">${botMsg.substring(0, 120)}${botMsg.length > 120 ? '...' : ''}</div></td>
+                    <td>${langBadge}</td>
+                    <td><span class="time">${date}</span></td>
+                </tr>`;
+            });
+
+            html += '</tbody></table>';
+            document.getElementById('conversationsTable').innerHTML = html;
+        }
+
+        function updateRecentConversations() {
+            const convs = conversationsData.conversations || [];
+            if (convs.length === 0) {
+                document.getElementById('recentConversations').innerHTML = '<div class="empty">No conversations yet</div>';
+                return;
+            }
+
+            let html = '';
+            convs.slice(0, 5).forEach(conv => {
+                const date = new Date(conv.created_at).toLocaleString();
+                const langBadge = `<span class="badge ${conv.language === 'pidgin' ? 'pidgin' : ''}">${conv.language === 'en' ? '🇬🇧 English' : '🇳🇬 Pidgin'}</span>`;
+
+                html += `<div class="convo-card">
+                    <div class="convo-header">
+                        <strong>Conversation #${conv.id}</strong>
+                        <div style="display:flex;gap:8px;align-items:center;">
+                            ${langBadge}
+                            <span class="time">${date}</span>
+                        </div>
+                    </div>
+                    <div class="msg-label">👤 User said:</div>
+                    <div class="user-msg">${conv.user_message}</div>
+                    <div class="msg-label" style="margin-top:8px;">🤖 Buddy replied:</div>
+                    <div class="bot-msg">${conv.bot_response}</div>
+                </div>`;
+            });
+
+            document.getElementById('recentConversations').innerHTML = html;
+        }
+
+        function switchTab(tabName, event) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            if (event) event.target.classList.add('active');
+        }
+
+        // Auto load on page open
+        window.onload = () => loadData();
+    </script>
+</body>
+</html>
