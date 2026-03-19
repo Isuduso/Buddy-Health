@@ -105,7 +105,7 @@ def token_required(f):
     return decorated
 
 def generate_ai_response(message, language='en'):
-if not is_health_related(message):
+    if not is_health_related(message):
         if language == 'pidgin':
             return "I no fit answer dis question. Abeg ask me health question only."
         else:
