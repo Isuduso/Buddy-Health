@@ -105,9 +105,13 @@ def token_required(f):
     return decorated
 
 def generate_ai_response(message, language='en'):
-    if language == 'pidgin':
+if not is_health_related(message):
+        if language == 'pidgin':
+            return "I no fit answer dis question. Abeg ask me health question only."
+        else:
+            return "I can only assist with health-related inquiries. Please ask a health question."
         prompt = f"""Answer in Nigerian Pidgin English using this exact structure:
-
+def ge
 WETIN DEY HAPPEN:
 [Brief explanation]
 
